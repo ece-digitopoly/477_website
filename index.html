@@ -27,15 +27,23 @@
                     <li class="nav-item" role="presentation"></li>
                     <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#pssc" style="font-size: 14px;margin-right: 8px;">PSSC's</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#team_progress" style="font-size: 14px;margin-right: 8px;">PROGRESS</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#contact" style="font-size: 14px;">Contact</a></li>
+                    <div class="dropdown">
+                        <li class="contactlink nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#contact" style="font-size: 14px; color: hsla(0,0%,100%,.9); letter-spacing: 2px">CONTACT</a></li>
+                        <div class="dropdown-content">
+                            <a style="font-size: 12px" href="mailto:shankak@purdue.edu?subject=[ECE477]">KARTHICK SHANKAR</a>
+                            <a style="font-size: 12px" href="mailto:menon18@purdue.edu?subject=[ECE477]">NIRAJ MENON</a>
+                            <a style="font-size: 12px" href="mailto:agokan@purdue.edu?subject=[ECE477]">ALEX GOKAN</a>
+                            <a style="font-size: 12px" href="mailto:kelley96@purdue.edu?subject=[ECE477]">CARSON KELLEY</a>
+                        </div>
+                    </div>
                 </ul>
             </div>
         </div>
     </nav>
     <div>
-        <header class="masthead" style="background: url('assets/img/bg-pattern.png'), linear-gradient(to left, #7b4397, #dc2430);filter: blur(0px) brightness(119%) contrast(98%);background-color: #000000;">
+        <header class="masthead" style="background: url('assets/img/bg-pattern.png'), linear-gradient(to left, #7b4397, #dc2430); filter: blur(0px) brightness(119%) contrast(98%); background-color: #000000;">
             <div class="container">
-                <div class="row" style="padding-top: 6vw;">
+                <div class="row" style="padding-top: calc(10vw - 8vh);">
                     <div class="col-md-6 d-xl-flex justify-content-xl-center align-items-xl-center">
                         <p>With the conversion of classic board games like Settlers of Catan, Risk and the Game of Life to simplistic apps, we feel that these digitized versions don’t have the fun and intrigue as their cardboard counterparts do. At the same
                             time, as any board game player can attest, maintaining play pieces and cards for the board game is quite a challenge! And so we asked ourselves: how do we combine the satisfaction of a board game with the simplicity of an app?<br><br><br>Our
@@ -46,7 +54,7 @@
             </div>
         </header>
     </div>
-    <div class="top_div_theme" id="team" style="padding-top: 30px; padding-bottom: 30px; border-bottom: 1px solid #bbb">
+    <div class="top_div_theme" id="team">
         <div class="container">
             <div class="intro">
                 <h2 class="text-center">The Team</h2>
@@ -80,7 +88,7 @@
             </div>
         </div>
     </div>
-    <div class="top_div_theme" id="pssc" style="padding-top: 30px; padding-bottom: 30px; border-bottom: 1px solid #bbb">
+    <div class="top_div_theme" id="pssc">
         <div class="section-heading text-center">
             <h2>Project-Specific Success Criteria<br></h2>
             <p class="text-muted">By the end of December, we hope to have achieved the following objectives with respect to our project:</p>
@@ -114,7 +122,7 @@
             </div>
         </div>
     </div>
-    <div class="top_div_theme" id="team_progress" style="padding-top: 30px; padding-bottom: 30px; border-bottom: 1px solid #bbb; text-align: center">
+    <div class="top_div_theme" id="team_progress" style="text-align: center">
         <div class="section-heading text-center">
             <h2>Team Progress<br></h2>
             <p class="text-muted">Powered by Trello! View our ongoing progress with the project as a whole.</p>
@@ -132,6 +140,7 @@
         <blockquote class="trello-board-compact">
             <a href="https://trello.com/b/PqWYXtk3/pcb">Digitopoly Team PCB Progress</a>
         </blockquote>
+    </div>
     <footer>
         <div class="container">
             <p>©&nbsp;Digitopoly 2019. All Rights Reserved.</p>
