@@ -9,3 +9,10 @@ $.ajax({
     }
   })
 }
+
+function uploadFile () {
+  document.getElementsByName ('filevault')[0].click()
+  $('td[name=filevault]').change (function () { 
+    document.getElementById ("uploader").innerHTML = document.getElementsByName ('filevault')[0].value
+  })
+}
