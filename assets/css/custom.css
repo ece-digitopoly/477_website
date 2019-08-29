@@ -14,6 +14,17 @@ position: relative;
 display: inline-block;
 }
 
+@media only screen and (max-width: 1000px) {
+    .contactlink {
+      color: #000!important;
+    }
+  }
+
+@media only screen and (min-width: 1001px) {
+    .contactlink {
+        color: #fff!important;
+    }
+}
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {

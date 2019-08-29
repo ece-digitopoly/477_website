@@ -24,11 +24,13 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="nav navbar-nav ml-auto">
                     <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#team" style="font-size: 14px;margin-right: 8px;">TEAM</a></li>
-                    <li class="nav-item" role="presentation"></li>
                     <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#pssc" style="font-size: 14px;margin-right: 8px;">PSSC's</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#team_progress" style="font-size: 14px;margin-right: 8px;">PROGRESS</a></li>
                     <div class="dropdown">
-                        <li class="contactlink nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#contact" style="font-size: 14px; color: hsla(0,0%,100%,.9); letter-spacing: 2px">CONTACT</a></li>
+                        <li><a class="contactlink nav-link js-scroll-trigger" href="#contact" style="font-size: 14px; letter-spacing: 2px">CONTACT</a></li>
+                        <script>
+                            document.getElementsByClassName ("contactlink")[0].style ['color'] = document.body.clientWidth <= 1091 ? "#fff!important" : "#000!important";
+                        </script>
                         <div class="dropdown-content">
                             <a style="font-size: 12px" href="mailto:shankak@purdue.edu?subject=[ECE477]">KARTHICK SHANKAR</a>
                             <a style="font-size: 12px" href="mailto:menon18@purdue.edu?subject=[ECE477]">NIRAJ MENON</a>
