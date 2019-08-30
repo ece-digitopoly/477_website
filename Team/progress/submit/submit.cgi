@@ -1,5 +1,5 @@
 #!/usr/local/bin/python3
-import os, cgi, hashlib, io
+import os, cgi, hashlib, io, re
 
 form = cgi.FieldStorage()
 print ("Content-Type: text/html\n\n")
@@ -25,9 +25,7 @@ if i >= 0:
 		newfilename = '../custom_img/' + hashlib.sha1 (file.filename.encode()).hexdigest() + file.filename [file.filename.index ('.') :]
 		try:
 			with open (newfilename, 'wb') as savefile:
-				print ("Reading stream...")
 				data = file.file.read()
-				print ("Stream read...")
 				savefile.write (data)
 		except Exception as e:
 			print ("Unable to save file")
@@ -47,14 +45,14 @@ if userreq != "menon18" and userreq != "agokan" and userreq != "kelley96" and us
 with open ('../' + userreq + '.html', 'r') as file:
 	html = file.read()
 
+prog = re.sub (r'\[([^\]]+)\]\(([^\)]+)\)', r'<a href="\2">\1</a>', prog)
+
 newhtml = '                    <p class="text-left">' + prog.replace ('\n', '<br>') + '</p>\n'
 for filepath in files:
 	newhtml += '                    <a href={0}><img class="insert_img" src="{0}"></a>\n'.format (filepath.replace ('../', ''))
 
 newhtml += '                    <div class="bordered" style="width: 100%"></div>\n'
 html = html.replace ('                    <!--REPLACE HERE-->', newhtml + '                    <!--REPLACE HERE-->')
-
-print (html)
 
 with open ('../' + userreq + '.html', 'w+') as file:
 	file.write (html)
