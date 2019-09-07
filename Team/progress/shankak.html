@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>[ECE477] Progress Report for Karthick Shankar</title>
+    <title>[ECE477] Progress Report for Alex Gokan</title>
     <meta name="description" content="A digital implementation of Monopoly.">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
@@ -24,22 +24,32 @@
             <div class="intro"></div>
             <div class="row text-center d-xl-flex justify-content-xl-center align-items-xl-center people" style="padding-bottom: 0px;">
                 <div class="col">
-                    <div class="box" style="width: 100%;"><img class="rounded-circle" src="assets/img/1.jpg" style="width: 200px;padding-bottom: 20px;filter: hue-rotate(98deg);">
+                    <div class="box" style="width: 100%;"><img class="rounded-circle" src="assets/img/shankak.jpg" style="width: 200px; margin-bottom: 20px">
                         <h3 class="name">Karthick Shankar<br></h3>
                         <p class="title">Progress Report<br></p>
                     </div>
                 </div>
             </div>
             <div class="row text-center d-xl-flex justify-content-xl-center align-items-xl-center people" style="padding-top: 0px;">
-                <div class="col">
+            <div class="col">
+                    <p class="text-left">Week 1<br><br>Due Date: 08/23/2019<br><br>Total Hours: 5 hours<br><br>Description of Design Efforts:<br><br>Since this was the first week, I spent some time setting up some tools for project management. This would ensure a smooth workflow for the team and limit confusion. I set up a <a href="https://github.com/ece-digitopoly/">github organization</a> where all the repositories for our code will lie. This is better than having it on personal accounts where tracking becomes a hassle. I also set up Kanban boards on the popular website <a href="https://trello.com/digitopoly">trello</a> for each section of the project to ensure that we are working towards specific tasks and are able to scope the features out early on.<br></p>
+                    <a href=custom_img/64d848a9421c5e0bac25520c82127092cd0db380.PNG><img class="insert_media" src="custom_img/64d848a9421c5e0bac25520c82127092cd0db380.PNG"></a>
+                    <a href=custom_img/32456e0e4bc3c5715bb7b50e804d573128c5c65a.PNG><img class="insert_media" src="custom_img/32456e0e4bc3c5715bb7b50e804d573128c5c65a.PNG"></a>
+                    <div class="bordered" style="width: 100%"></div>
+                    <p class="text-left">Week 2<br><br>Due Date: 08/30/2019<br><br>Total Hours: 7<br><br>Description of Design Efforts:<br>This week, I started off by assisting Alex when wiring up the XY plotter motors to the H bridge (DRV8825). I then moved on to look at possible options for monitors and scoping out the sizes of our subsystem so far. The movement track mentioned in the image is the track that the pieces will move on while the stationary track is the track where the pieces will be placed onto. As the image below shows, there’s a very specific size that our monitor must be (14.5in x 14.5in maximum) to maximize viewing pleasure and still have space for the electromagnet. The existing electromagnet that came with the XY plotter had a diameter of 1in which is too big for our project unless we decide to sacrifice on screen real estate. I found an <a href=" https://www.amazon.com/uxcell-Electric-Lifting-Electromagnet-Solenoid/dp/B01N3387AA/">electromagnet</a> with a 0.5in diameter but it has half the amount of force, so we will have to evaluate those requirements soon. The monitors that work best for this are those with a 4:3 aspect ratio, commonly found these days on CCTV monitors. I picked out a couple different monitors on Amazon (<a href=" https://www.amazon.com/Inch-Security-Monitor-800X600-Built/dp/B07DCB62C1/">monitor 1</a> and <a href=" https://www.amazon.com/Eyoyo-Color-Security-Monitor-800X600/dp/B071HXX1XQ/">monitor 2</a>)for us to consider if the one we already had was too big.<br>Also, I started preliminary design work on what the screen would look like and started scoping out exact placements and fonts.</p>
+                    <a href=custom_img/dc3f552471725d3aeb855d717611dce0d457da57.png><img class="insert_media" src="custom_img/dc3f552471725d3aeb855d717611dce0d457da57.png"></a>
+                    <a href=custom_img/6b8cce53e04966b22330eb77845ba8f1928e0373.png><img class="insert_media" src="custom_img/6b8cce53e04966b22330eb77845ba8f1928e0373.png"></a>
+                    <div class="bordered" style="width: 100%"></div>
+                    <p class="text-left">Week 3<br><br>Due Date: 09/26/2019<br><br>Total hours: 7 hours<br><br>Description of Design Efforts:<br>This week, I was mainly working on the Software Overview document and was writing preliminary code to display the game board. I used JavaScript to make classes for the player and community chest and chance cards and displayed them on a canvas object. The code can be found on the <a href="https://github.com/ece-digitopoly/game-display">github repo</a>. I hooked up the RaspberryPi to our display and ran the code to get an idea of the sizing of the digital board as shown in the image.<br><br>I also started testing our Bluetooth breakout board (the STEVAL-IDB007V1M) and recognized the device on my phone as shown in the screenshot.</p>
+                    <a href=custom_img/895b22e72f1dd8d5bbc9517ee863cf84b742bff4.jpeg><img class="insert_media" src="custom_img/895b22e72f1dd8d5bbc9517ee863cf84b742bff4.jpeg"></a>
+                    <a href=custom_img/301248beffa9a74a67e2e0521a2c20e5a60f9731.jpeg><img class="insert_media" src="custom_img/301248beffa9a74a67e2e0521a2c20e5a60f9731.jpeg"></a>
+                    <div class="bordered" style="width: 100%"></div>
                     <!--REPLACE HERE-->
-                </div>
             </div>
         </div>
     </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/custom.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <script src="assets/js/new-age.js"></script>
 </body>

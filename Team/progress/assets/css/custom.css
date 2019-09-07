@@ -4,8 +4,16 @@
   margin-bottom: 30px;
 }
 
-.insert_img {
-  width: 40vw; 
+.insert_media {
+  width: 500px; 
+  margin-top: 3px; 
+  margin-left: 3px; 
+  margin-right: 3px; 
+  margin-bottom: 3px;
+}
+
+.insert_media_vid {
+  width: 300px; 
   margin-top: 3px; 
   margin-left: 3px; 
   margin-right: 3px; 

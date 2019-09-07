@@ -18,11 +18,13 @@
   .team-boxed h2 {
     margin-bottom: 25px;
     padding-top: 25px;
+
     font-size: 24px;
   }
 }
 
 .team-boxed .intro {
+
   font-size: 16px;
   max-width: 500px;
   margin: 0 auto;
@@ -55,14 +57,19 @@
 }
 
 .team-boxed .item .title {
+
   text-transform: uppercase;
   font-weight: bold;
   color: #d0d0d0;
+
   letter-spacing: 2px;
+
   font-size: 13px;
 }
 
+
 .team-boxed .item .description {
+
   font-size: 15px;
   margin-top: 15px;
   margin-bottom: 20px;
@@ -72,17 +79,22 @@
   max-width: 160px;
 }
 
+
 .team-boxed .social {
+
   font-size: 18px;
   color: #a2a8ae;
 }
 
+
 .team-boxed .social a {
   color: inherit;
   margin: 0 10px;
+
   display: inline-block;
   opacity: 0.7;
 }
+
 
 .team-boxed .social a:hover {
   opacity: 1;

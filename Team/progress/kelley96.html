@@ -24,7 +24,7 @@
             <div class="intro"></div>
             <div class="row text-center d-xl-flex justify-content-xl-center align-items-xl-center people" style="padding-bottom: 0px;">
                 <div class="col">
-                    <div class="box" style="width: 100%;"><img class="rounded-circle" src="assets/img/1.jpg" style="width: 200px;padding-bottom: 20px;filter: hue-rotate(0deg) saturate(187%);">
+                    <div class="box" style="width: 100%;"><img class="rounded-circle" src="assets/img/kelley96.jpg" style="width: 200px;padding-bottom: 20px;filter: hue-rotate(0deg) saturate(187%);">
                         <h3 class="name">Carson Kelley<br></h3>
                         <p class="title">Progress Report<br></p>
                     </div>
@@ -32,6 +32,14 @@
             </div>
             <div class="row text-center d-xl-flex justify-content-xl-center align-items-xl-center people" style="padding-top: 0px;">
                 <div class="col">
+                    <p class="text-left">Week 2<br><br>Due Date: 8-30-19<br><br>Total hours: 7 hours<br><br>Description of design efforts:<br><br>For this week my main goal was to better determine the components we would need to use in the design of our electronic dice. In the pursuit of this goal I have determined the microcontroller that we will likely use is the SPBTLE-1S due to its built in Bluetooth module and size. Another consideration was the ability to communicate with an IMU, which through some preliminary research seem to mostly use either SPI or I2C. These are both interfaces included on the SPBTLE-1S. I also investigated the power requirements of the dice and how to charge them. Using wireless charging or external charge ports seem like our two best options, but we have not made a final decision.<br><br>In following this up I went through the EAGLE PCB tutorial provided and designed a library containing the SPBTLE-1S chip. I then made a simple diagram connecting it to an accelerometer chip I found in EAGLE just for practice. This was to refresh my knowledge of EAGLE, especially over how to create new parts/libraries. This will be important for the project because I will be the person in charge of designing our PCB’s. The next step for this is figuring out the actual IMU we want to use in the dice and creating the part in EAGLE. Along with this we will need to decide on our desired method for powering the dice and recharging them.<br></p>
+                    <a href=custom_img/8adfded17151299791f6b36416d23d067e30e5a6.PNG><img class="insert_media" src="custom_img/8adfded17151299791f6b36416d23d067e30e5a6.PNG"></a>
+                    <a href=custom_img/7af86c01957881ecce8d3290734aa390b32157c4.PNG><img class="insert_media" src="custom_img/7af86c01957881ecce8d3290734aa390b32157c4.PNG"></a>
+                    <div class="bordered" style="width: 100%"></div>
+                    <p class="text-left">Week 3<br><br>Due Date: 9-6-2019<br><br>Total hours: 7 hours<br><br>Description of design efforts:<br>This week my major contribution was finalizing our part selection for the IMU we plan to use in the dice and ordering a breakout board for it so we can begin to prototype with it next week. We selected the ST LSM6DSLTR (https://www.digikey.com/product-detail/en/stmicroelectronics/LSM6DSLTR/497-16705-1-ND/6192805) which is a very low power IMU that has programmable interrupts. These can be used to set it into a super low power sleep state that it will remain in until it detects motion. The breakout board we ordered is the STEVAL-MKI178V2 (https://www.mouser.com/ProductDetail/?qs=lYGu3FyN48fC%2F0yLpJsQFw%3D%3D) which has all of the built components needed to begin prototyping. I also contributed to the component analysis document, mainly with the section on the IMU's which was my main task for the week. This took a lot of time due to the need to keep the power consumption as low as possible since the dice are going to be powered by as small a battery as we can possibly use. This took a lot longer than expected but now that we have ordered our breakout board we will be able to begin prototyping the main dice circuitry in week 4. The next major steps for developing the dice design are to select wireless charging coils to receive and transmit power. My main goal is to finalize a dice design as early as possible and worry about the PCB for the main game board afterwards due to its complexity.</p>
+                    <a href=custom_img/410185c7a4c4c6814147f9bc77a92278bd7a604a.PNG><img class="insert_media" src="custom_img/410185c7a4c4c6814147f9bc77a92278bd7a604a.PNG"></a>
+                    <a href=custom_img/c5ab67e3d2a0af6530ae65aff12e67832fcdcbd4.PNG><img class="insert_media" src="custom_img/c5ab67e3d2a0af6530ae65aff12e67832fcdcbd4.PNG"></a>
+                    <div class="bordered" style="width: 100%"></div>
                     <!--REPLACE HERE-->
                 </div>
             </div>
@@ -39,7 +47,6 @@
     </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/custom.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <script src="assets/js/new-age.js"></script>
 </body>
