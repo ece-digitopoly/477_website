@@ -19,3 +19,7 @@
   margin-right: 3px; 
   margin-bottom: 3px;
 }
+
+img {
+    image-orientation: from-image;
+}
